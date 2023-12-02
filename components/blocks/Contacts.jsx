@@ -12,7 +12,7 @@ const Contacts = () => {
           Обговоримо Деталі
         </h3>
         <h4 className="font-serif text-5xl mb-24" data-aos="fade-right">
-          Зв'яжіться з нашою командою
+          Зв`яжіться з нашою командою
         </h4>
 
         <div
