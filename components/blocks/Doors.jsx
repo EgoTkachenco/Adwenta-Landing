@@ -56,17 +56,17 @@ const BulletProof = () => {
           правильного рівня захисту відповідно до потреб і конкретних умов
           використання.
         </div>
-        <div
-          className="flex md:flex-row flex-col gap-6 md:items-start justify-center items-center"
-          data-aos="fade-left"
-        >
+        <div className="flex md:flex-row flex-col gap-6 md:items-start justify-center items-center">
           <Image
+            data-aos="fade-left"
             src="/bulletproof_1.png"
             alt="illustration"
             width={302}
             height={372}
           />
           <Image
+            data-aos="fade-left"
+            data-aos-delay="200"
             src="/bulletproof_2.png"
             alt="illustration"
             width={302}

@@ -61,7 +61,7 @@ const Contacts = () => {
       </div>
 
       <div
-        className="xl:w-1/3 relative xl:ms-auto w-96 mx-auto"
+        className="xl:w-1/3 relative xl:ms-auto w-full mx-auto"
         data-aos="fade-left"
       >
         <iframe
