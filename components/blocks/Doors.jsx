@@ -5,7 +5,7 @@ import { Card } from '../Styled';
 const Doors = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
-    <div id="doors" className="lg:p-20 py-10 px-8">
+    <div id="doors" className="lg:p-20 py-10 px-4">
       <h3
         className="text-gray-700 text-3xl uppercase mb-3"
         data-aos="fade-right"
@@ -18,7 +18,7 @@ const Doors = () => {
         </h2>
 
         <div
-          className="flex items-center mb-8 lg:overflow-x-visible overflow-x-auto md:mr-0 md:pr-0 -mr-8 pr-8 md:pb-0 pb-2 "
+          className="flex items-center mb-8 lg:overflow-x-visible overflow-x-auto md:mr-0 md:pr-0 -mr-4 pr-4 md:pb-0 pb-2 "
           data-aos="fade-left"
         >
           {TABS.map((tab, i) => (

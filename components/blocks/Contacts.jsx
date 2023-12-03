@@ -5,7 +5,7 @@ const Contacts = () => {
   return (
     <footer
       id="contacts"
-      className="bg-gray-800 text-gray-200 lg:p-20 py-10 px-8 flex flex-col xl:flex-row gap-6"
+      className="bg-gray-800 text-gray-200 lg:p-20 py-10 px-4 flex flex-col xl:flex-row gap-6"
     >
       <div className="flex-grow">
         <h3 className="uppercase text-2xl mb-3" data-aos="fade-right">

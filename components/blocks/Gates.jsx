@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Card } from '../Styled';
 
 const Gates = () => (
-  <div id="gates" className="lg:p-20 py-10 px-8">
+  <div id="gates" className="lg:p-20 py-10 px-4">
     <div className="flex flex-col gap-12 xl:flex-row xl:gap-32 items-center">
       <div className="flex-1" data-aos="fade-right">
         <h3 className="text-gray-700 text-3xl uppercase mb-3">

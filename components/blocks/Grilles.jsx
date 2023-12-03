@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Card } from '../Styled';
 
 const Grilles = () => (
-  <div id="grilles" className="lg:p-20 py-10 px-8">
+  <div id="grilles" className="lg:p-20 py-10 px-4">
     <div className="flex flex-col xl:flex-row xl:gap-32">
       <div>
         <h3

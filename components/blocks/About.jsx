@@ -17,7 +17,7 @@ const ADVANTAGES = [
 
 const About = () => {
   return (
-    <section id="about" className="lg:p-20 py-10 px-8 lg:space-y-24 space-y-8">
+    <section id="about" className="lg:p-20 py-10 px-4 lg:space-y-24 space-y-8">
       <div data-aos="fade-right" className="max-w-screen-md lg:text-3xl">
         Наша компанія надає послуги з виробництва та монтажу виробів з металу
         вже понад 15 років. Ми перший офіційний виробник, який отримав ліцензію
