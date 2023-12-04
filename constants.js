@@ -2,7 +2,7 @@ module.exports = {
   title: 'Виробник протипожежних та рентгенозахисних дверей',
   description:
     'Протипожежні, рентгенозахисні, куленепробивні та вхідні двері у Києві з доставкою по всій Україні від компанії Адвента 2000.',
-  cannonical: 'https://adwenta.kiev.com/',
+  cannonical: 'https://advventa2000.com.ua/',
   og_pic: '/header-picture.png',
   og_type: 'website',
   locale: 'uk_UA',

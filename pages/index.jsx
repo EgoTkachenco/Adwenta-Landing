@@ -16,6 +16,10 @@ export default function Home() {
           name="description"
           content="Протипожежні, рентгенозахисні, куленепробивні та вхідні двері у Києві з доставкою по всій Україні від компанії Адвента 2000."
         />
+        <meta
+          name="google-site-verification"
+          content="isPZL5HUmlC88C_jnomToPJ88foxwMDsmxtCJGXpQnc"
+        />
         {/* Надаємо гарантію та сертифікат на продукцію, що випускається. */}
       </Head>
 
