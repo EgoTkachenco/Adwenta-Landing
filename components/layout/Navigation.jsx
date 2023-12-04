@@ -12,7 +12,7 @@ const links = [
   { label: 'ПРО НАС', link: '#about' },
   { label: 'ДВЕРІ', link: '#doors' },
   { label: 'ВОРОТА ТА КОВАНІ ВИРОБИ', link: '#gates' },
-  { label: 'ГРАТИ', link: '#grilles' },
+  { label: 'ҐРАТИ', link: '#grilles' },
   { label: 'КОНТАКТИ', link: '#contacts' },
 ];
 
@@ -40,8 +40,9 @@ const Navigation = () => {
       </div>
 
       <div className="flex gap-12 items-center py-3 xl:px-20 px-10 bg-white relative z-20">
-        <div className="flex items-center">
-          <Image src="/nav-logo.svg" alt="logo" height={32} width={138} />
+        <div className="flex items-center gap-2 font-serif text-xl">
+          <Logo />
+          АДВЕНТА
         </div>
 
         <div className="ml-auto mr-8 gap-12 hidden xl:flex">
@@ -112,3 +113,20 @@ const LinksList = () =>
       </Link>
     );
   });
+
+const Logo = () => (
+  <svg
+    width="27"
+    height="32"
+    viewBox="0 0 27 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M0 5.81818L13.5 0L27 5.81818V14.5455C27 22.6182 21.24 30.1673 13.5 32C5.76 30.1673 0 22.6182 0 14.5455V5.81818ZM2 7.36088L13.5 2.42424V29.5758C6.90667 28.0207 2 21.6154 2 14.7658V7.36088Z"
+      fill="#1A1C1E"
+    />
+  </svg>
+);

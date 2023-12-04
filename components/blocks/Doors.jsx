@@ -124,7 +124,7 @@ const FireProof = () => {
         <div className="flex md:flex-row flex-col gap-6 md:items-start justify-center items-center">
           <Image
             data-aos="fade-left"
-            src="/bulletproof_1.png"
+            src="/fireproof_1.png"
             alt="illustration"
             width={302}
             height={372}
@@ -132,7 +132,7 @@ const FireProof = () => {
           <Image
             data-aos="fade-left"
             data-aos-delay="200"
-            src="/bulletproof_2.png"
+            src="/fireproof_2.png"
             alt="illustration"
             width={302}
             height={372}
@@ -188,7 +188,7 @@ const RayProof = () => {
         <div className="flex md:flex-row flex-col gap-6 md:items-start justify-center items-center">
           <Image
             data-aos="fade-left"
-            src="/bulletproof_1.png"
+            src="/rayproof_1.png"
             alt="illustration"
             width={302}
             height={372}
@@ -196,7 +196,7 @@ const RayProof = () => {
           <Image
             data-aos="fade-left"
             data-aos-delay="200"
-            src="/bulletproof_2.png"
+            src="/rayproof_2.png"
             alt="illustration"
             width={302}
             height={372}
@@ -251,7 +251,7 @@ const Indoors = () => {
         <div className="flex md:flex-row flex-col gap-6 md:items-start justify-center items-center">
           <Image
             data-aos="fade-left"
-            src="/bulletproof_1.png"
+            src="/indoor_1.png"
             alt="illustration"
             width={302}
             height={372}
@@ -259,7 +259,7 @@ const Indoors = () => {
           <Image
             data-aos="fade-left"
             data-aos-delay="200"
-            src="/bulletproof_2.png"
+            src="/indoor_2.png"
             alt="illustration"
             width={302}
             height={372}
