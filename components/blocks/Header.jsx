@@ -13,15 +13,15 @@ const Header = () => {
       >
         Безпека та естетика
       </h3>
-      <h2
+      <h1
         data-aos="fade-up"
         data-aos-delay="100"
-        className="font-serif text-5xl max-w-5xl mb-8 text-center"
+        className="font-serif md:text-5xl text-4xl max-w-5xl mb-8 text-center"
       >
         Протипожежні, рентгенозахисні, куленепробивні та вхідні двері для вашого
         дому та бізнесу
         {/* Протипожежні двері, ворота та ковані вироби для вашого дому та бізнесу */}
-      </h2>
+      </h1>
       <Link
         data-aos="fade-up"
         data-aos-delay="200"
