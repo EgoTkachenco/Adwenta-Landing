@@ -23,7 +23,7 @@ const Header = () => {
       <Link
         data-aos="fade-up"
         data-aos-delay="200"
-        href="/"
+        href="#contacts"
         className="text-center text-xl p-2 mb-14 w-64  text-white rounded-md transition-colors bg-red-800 hover:bg-red-600 "
       >
         ЗВ`ЯЗАТИСЯ
