@@ -34,7 +34,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white text-black border-b-2 border-gray-600 relative">
+    <nav className="bg-white text-black border-b-2 border-gray-300 relative">
       <div className="gap-12 items-center justify-end py-3 xl:px-20 px-10 text-sm hidden xl:flex">
         <ContactsList />
       </div>
@@ -58,7 +58,7 @@ const Navigation = () => {
       </div>
 
       <div
-        className={`transition-all duration-1000 absolute w-full bg-white z-10 p-10 left-0 border-y-2 border-gray-600 space-y-4 ${
+        className={`transition-all duration-1000 absolute w-full bg-white z-10 p-10 left-0 border-y-2 border-gray-300 space-y-4 ${
           open ? 'top-full' : '-top-full -translate-y-full'
         }`}
       >
@@ -84,17 +84,17 @@ const ContactsList = () => (
     </div>
     <div className="flex items-center gap-1">
       <Image src="/icons/email.svg" alt="mail" width={16} height={16} />
-      <a href={constants.email.link} className="hover:underline">
+      <a href={constants.email.link} className="underline">
         {constants.email.label}
       </a>
     </div>
     <div className="flex items-center gap-1">
       <Image src="/icons/phone.svg" alt="phone" width={16} height={16} />
-      <a href={constants.phone_1.link} className="hover:underline">
+      <a href={constants.phone_1.link} className="underline">
         {constants.phone_1.label}
       </a>
       {' ' + '|' + ' '}
-      <a href={constants.phone_2.link} className="hover:underline">
+      <a href={constants.phone_2.link} className="underline">
         {constants.phone_2.label}
       </a>
     </div>
@@ -107,7 +107,7 @@ const LinksList = () =>
       <Link
         key={i}
         href={link.link}
-        className="flex items-center text-gray-600  hover:text-black  transition-all font-medium border-b-2 border-transparent hover:border-black"
+        className="flex items-center text-gray-600    transition-all font-medium border-b-2 border-transparent hover:border-black hover:text-black"
       >
         {link.label}
       </Link>

@@ -30,14 +30,14 @@ const Contacts = () => {
             title="Наші контакти:"
             text={
               <div>
-                <a href={constants.phone_1.link} className="hover:underline">
+                <a href={constants.phone_1.link} className="underline">
                   {constants.phone_1.label}
                 </a>
                 <span className="text-white hidden lg:inline">
                   {' ' + '|' + ' '}
                 </span>
                 <br className="block lg:hidden" />
-                <a href={constants.phone_2.link} className="hover:underline">
+                <a href={constants.phone_2.link} className="underline">
                   {constants.phone_2.label}
                 </a>
               </div>
@@ -47,7 +47,7 @@ const Contacts = () => {
             icon="/icons/email.svg"
             title="Електрона пошта:"
             text={
-              <a href={constants.email.link} className="hover:underline">
+              <a href={constants.email.link} className="underline">
                 {constants.email.label}
               </a>
             }

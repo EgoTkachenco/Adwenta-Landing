@@ -3,7 +3,7 @@ import constants from '@/constants';
 
 export default function Document() {
   return (
-    <Html lang={constants.locale}>
+    <Html lang="uk">
       <Head>
         <link rel="canonical" href={constants.cannonical} />
         <meta name="msapplication-TileColor" content="#da532c" />
