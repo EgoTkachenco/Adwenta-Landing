@@ -36,12 +36,12 @@ const About = () => {
       </div>
 
       <div className="space-y-6">
-        <h4
+        <h3
           data-aos="fade-right"
           className="text-xl uppercase font-medium text-gray-700"
         >
           Купуючи нашу продукцію, Ви можете бути впевнені в:
-        </h4>
+        </h3>
 
         <div className="flex flex-col lg:flex-row gap-6">
           {ADVANTAGES.slice(0, 3).map((item, i) => (
