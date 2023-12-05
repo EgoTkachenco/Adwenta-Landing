@@ -45,6 +45,17 @@ export default function Document() {
 						]
 					}`}
         </script>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"
+        ></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'AW-11412607352');`}
+        </script>
       </Head>
       <body>
         <Main />
