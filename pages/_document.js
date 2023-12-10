@@ -17,7 +17,7 @@ export default function Document() {
         <meta property="og:image" content={constants.og_pic} />
         <meta property="og:locale" content={constants.locale} />
         <meta property="og:site_name" content={constants.site_name} />
-        <script type="application/ld+json">
+        <NextScript type="application/ld+json">
           {`{
 						"@context": "http://www.schema.org",
 						"@type": "LocalBusiness",
@@ -44,18 +44,7 @@ export default function Document() {
 							}
 						]
 					}`}
-        </script>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"
-        ></script>
-        <script>
-          {`window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-					gtag('config', 'AW-11412607352');`}
-        </script>
+        </NextScript>
       </Head>
       <body>
         <Main />

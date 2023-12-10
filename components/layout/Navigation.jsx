@@ -80,7 +80,7 @@ const ContactsList = () => (
     </div>
     <div className="flex items-center gap-1">
       <Image src="/icons/location.svg" alt="calendar" width={16} height={16} />
-      {constants.address}
+      {constants.full_address}
     </div>
     <div className="flex items-center gap-1">
       <Image src="/icons/email.svg" alt="mail" width={16} height={16} />

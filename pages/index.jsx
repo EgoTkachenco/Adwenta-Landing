@@ -6,6 +6,7 @@ import Doors from '@/components/blocks/Doors';
 import Gates from '@/components/blocks/Gates';
 import Grilles from '@/components/blocks/Grilles';
 import Head from 'next/head';
+import Script from 'next/script';
 
 export default function Home() {
   return (
@@ -22,6 +23,20 @@ export default function Home() {
         />
         {/* Надаємо гарантію та сертифікат на продукцію, що випускається. */}
       </Head>
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-11412607352"
+      />
+      <Script id="google-analytics">
+        {`
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', 'AW-11412607352');
+						gtag('send', 'pageview');
+        `}
+      </Script>
 
       <Layout>
         <Header />

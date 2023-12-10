@@ -55,7 +55,7 @@ const Contacts = () => {
           <ContactItem
             icon="/icons/location.svg"
             title="Наша адреса:"
-            text={<address>{constants.address}</address>}
+            text={<address>{constants.full_address}</address>}
           />
         </div>
       </div>
