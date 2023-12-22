@@ -17,34 +17,6 @@ export default function Document() {
         <meta property="og:image" content={constants.og_pic} />
         <meta property="og:locale" content={constants.locale} />
         <meta property="og:site_name" content={constants.site_name} />
-        <NextScript type="application/ld+json">
-          {`{
-						"@context": "http://www.schema.org",
-						"@type": "LocalBusiness",
-						"name": "${constants.site_name}",
-						"url": "${constants.cannonical}",
-						"logo": "${constants.logo}",
-						"description": "${constants.description}",
-						"address": {
-							"@type": "PostalAddress",
-							"streetAddress": "${constants.address}",
-							"postOfficeBoxNumber": "${constants.email.label}",
-							"addressLocality": "${constants.city}",
-							"addressCountry": "${constants.country}"
-						},
-						"openingHours": "Mo, Tu, We, Th, Fr 09:00-18:00",
-						"contactPoint": [
-							{
-								"@type": "ContactPoint",
-								"telephone": "${constants.phone_1.label}"
-							}
-							{
-								"@type": "ContactPoint",
-								"telephone": "${constants.phone_2.label}"
-							}
-						]
-					}`}
-        </NextScript>
       </Head>
       <body>
         <Main />

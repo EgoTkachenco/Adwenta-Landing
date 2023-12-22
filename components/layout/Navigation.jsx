@@ -34,7 +34,10 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white text-black border-b-2 border-gray-300 relative">
+    <nav
+      className="bg-white text-black border-b-2 border-gray-300 fixed top-0 left-2/4 -translate-x-2/4 w-full z-[100]"
+      style={{ maxWidth: '1440px' }}
+    >
       <div className="gap-12 items-center justify-end py-3 xl:px-20 px-10 text-sm hidden xl:flex">
         <ContactsList />
       </div>
@@ -57,14 +60,18 @@ const Navigation = () => {
         </button>
       </div>
 
+      <div className="gap-4 items-center py-3 px-10 text-sm xl:hidden flex flex-wrap">
+        <ContactsList />
+      </div>
+
       <div
         className={`transition-all duration-1000 absolute w-full bg-white z-10 p-10 left-0 border-y-2 border-gray-300 space-y-4 ${
           open ? 'top-full' : '-top-full -translate-y-full'
         }`}
       >
         <LinksList />
-        <hr />
-        <ContactsList />
+        {/* <hr />
+        <ContactsList /> */}
       </div>
     </nav>
   );
@@ -74,19 +81,19 @@ export default Navigation;
 
 const ContactsList = () => (
   <>
-    <div className="flex items-center gap-1">
+    <div className="items-center gap-1 xl:flex hidden">
       <Image src="/icons/calendar.svg" alt="calendar" width={16} height={16} />
       {constants.work_hours}
     </div>
-    <div className="flex items-center gap-1">
-      <Image src="/icons/location.svg" alt="calendar" width={16} height={16} />
-      {constants.full_address}
-    </div>
-    <div className="flex items-center gap-1">
+    <div className="items-center gap-1 xl:flex hidden">
       <Image src="/icons/email.svg" alt="mail" width={16} height={16} />
       <a href={constants.email.link} className="underline">
         {constants.email.label}
       </a>
+    </div>
+    <div className="flex items-center gap-1">
+      <Image src="/icons/location.svg" alt="calendar" width={16} height={16} />
+      {constants.full_address}
     </div>
     <div className="flex items-center gap-1">
       <Image src="/icons/phone.svg" alt="phone" width={16} height={16} />

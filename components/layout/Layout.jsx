@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
     <>
       <div
         style={{ maxWidth: '1440px' }}
-        className="min-h-screen mx-auto flex flex-col"
+        className="min-h-screen mx-auto flex flex-col relative"
       >
         <Navigation />
         <main>{children}</main>

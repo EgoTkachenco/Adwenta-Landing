@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header
-      className="flex flex-col justify-center items-center bg-white py-10 md:px-20 px-4"
+      className="flex flex-col justify-center items-center bg-white py-10 md:px-20 px-4 sm:mt-28  mt-16"
       id="home"
     >
       <h3

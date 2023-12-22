@@ -6,9 +6,16 @@ import Doors from '@/components/blocks/Doors';
 import Gates from '@/components/blocks/Gates';
 import Grilles from '@/components/blocks/Grilles';
 import Head from 'next/head';
-import Script from 'next/script';
+import constants from '@/constants';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    window &&
+      window.gtag('event', 'conversion', {
+        transaction_id: '',
+      });
+  }, []);
   return (
     <>
       <Head>
@@ -21,22 +28,38 @@ export default function Home() {
           name="google-site-verification"
           content="isPZL5HUmlC88C_jnomToPJ88foxwMDsmxtCJGXpQnc"
         />
-        {/* Надаємо гарантію та сертифікат на продукцію, що випускається. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+						"@context": "http://www.schema.org",
+						"@type": "LocalBusiness",
+						"name": "${constants.site_name}",
+						"url": "${constants.cannonical}",
+						"logo": "${constants.logo}",
+						"description": "${constants.description}",
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "${constants.address}",
+							"postOfficeBoxNumber": "${constants.email.label}",
+							"addressLocality": "${constants.city}",
+							"addressCountry": "${constants.country}"
+						},
+						"openingHours": "Mo, Tu, We, Th, Fr 09:00-18:00",
+						"contactPoint": [
+							{
+								"@type": "ContactPoint",
+								"telephone": "${constants.phone_1.label}"
+							},
+							{
+								"@type": "ContactPoint",
+								"telephone": "${constants.phone_2.label}"
+							}
+						]
+					}`,
+          }}
+        />
       </Head>
-      {/* <!-- Google tag (gtag.js) --> */}
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=AW-11412607352"
-      />
-      <Script id="google-analytics">
-        {`
-						window.dataLayer = window.dataLayer || [];
-						function gtag(){dataLayer.push(arguments);}
-						gtag('js', new Date());
-						gtag('config', 'AW-11412607352');
-						gtag('send', 'pageview');
-        `}
-      </Script>
 
       <Layout>
         <Header />
